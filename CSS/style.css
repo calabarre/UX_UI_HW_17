@@ -1,0 +1,227 @@
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+
+/* text-font + size */
+
+h1 {
+    color: aqua;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 50px;
+    font-weight:600;
+                                                
+}
+
+h2 {
+    background-color: orange;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-family: ‘PP Editorial New’, sans-serif;
+    font-size: 20px;
+    text-align: center; 
+
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-weight: normal;
+    text-align: center; 
+}
+
+
+p {
+    font-size: 12px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-style: normal;
+    text-align: center; 
+}
+
+/* footer text */
+a{
+    font-size: 10px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-style: normal;
+    text-align: center; 
+    padding: 5px;
+}
+
+b{
+    font-size: 10px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-style: normal;
+    text-align: center-right; 
+    padding: 5px;
+}
+
+
+
+/* navigation */
+
+.header {
+    color: plum;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+                                                
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: lightblue;
+
+}
+
+li {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 15px;
+    display: inline-flex;
+    float: center;
+    background-color: red;
+
+}
+
+.nav-button {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background: none;
+	color: #992626;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* introduction */
+
+.big-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    scale: 80%;
+    padding: 20px;
+}
+
+.about-button {
+    height: 35px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background-color: #BBB6A7; 
+    color: #992626;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    
+    
+}
+
+/* closing + social links */
+
+.social-section {
+    text-align: center;
+    margin-top: 15px;
+    padding: 40px;
+    background-color: grey;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: rgb(141, 47, 255);
+}
+.social-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* closing + social links */
+
+.column {
+  box-sizing: border-box;
+  flex: 1 100%;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.card-style {
+  border-radius: 12px;
+  border-image-slice: 1;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s linear;
+}
+.card-style:hover {
+  box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+  padding: 20px;
+}
+
+@media (min-width: 500px) {
+  .column {
+      flex: 0 0 calc(100%/2 - 40px);
+  }
+}
+
+@media (min-width: 900px) {
+    .column {
+      flex: 0 0 calc(100%/4 - 40px);
+  }
+}
+
+/* footer*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: palegoldenrod;
+}
+
+.link-column a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2px;
+  background-color: paleturquoise;
+}
+
+.link-column b {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2px;
+  background-color: purple;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;                                 
+  font-size: 12px;
+}
+
