@@ -249,13 +249,21 @@ li {
 /* test card */
 
 
-  
+  .projects {
+    display: grid;
+    place-items: center;
+    min-height: 98vh;
+
+
+  }
   .project-card {
-    background: pink;
+    background: #992626;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 64px 1fr;
     position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
     
   }
   
