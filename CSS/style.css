@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
+/* media */
+
 
 /* text-font + size */
 
@@ -223,6 +225,7 @@ li {
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 .text {
@@ -237,12 +240,109 @@ li {
     color: #6f6767;
 }
 
+.card-image {
+   
+    object-fit: cover;
+}
 
 
+/* test card */
 
+
+  
+  .project-card {
+    background: pink;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    position: relative;
+    
+  }
+  
+  .box-icon {
+    display: grid;
+    place-items: center;
+  }
+  
+  .box-label {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-size: 14px;
+    letter-spacing: 0.125em;
+  }
+  
+  .project-title {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 24px;
+    padding-top: 16px;
+  }
+  
+  .project-image {
+    
+    height: 400px;
+    border-radius:  18px 0 18px 0;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      display: grid;
+    }
+  }
+  
+  .studio-button {
+    position: absolute;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    background: #992626;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: 0.35s ease all;
+    overflow: hidden;
+    max-width: 22px; /* icon size */
+  }
+  
+  .studio-button-icon {
+    position: relative;
+    top: 1px;
+  }
+  
+  .studio-button-label {
+    text-transform: lowercase;
+    
+    white-space: nowrap;
+    transform: translateX(10px);
+    transition: 0.25s ease all;
+    padding: 5px;
+  }
+  
+  /* project hover */
+  .project-card:hover {
+
+    .studio-button {
+      max-width: 100%;
+    }
+    .studio-button-label {
+        opacity: 1;
+        transform: translateX(0);
+        transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
+      }
+  }
+  
 
 /* closing + social links */
 .social-section {
+    display: grid;
     text-align: center;
     margin-top: 5px;
     padding: 40px;
