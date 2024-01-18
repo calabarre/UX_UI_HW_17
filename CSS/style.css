@@ -297,7 +297,6 @@ li {
   
   .studio-button {
     position: absolute;
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     bottom: 16px;
     right: 16px;
     display: flex;
@@ -319,14 +318,13 @@ li {
   
   .studio-button-label {
     text-transform: lowercase;
-    
     white-space: nowrap;
     transform: translateX(10px);
     transition: 0.25s ease all;
     padding: 5px;
   }
   
-  /* project hover */
+  /* project */
   .project-card:hover {
 
     .studio-button {
