@@ -8,10 +8,12 @@
 h1 {
     color: #BBB6A7;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    font-size: 48px;
+    font-size: 38px;
     padding: 5px;
     font-weight: 600;
-    font-style: normal;
+    align-items: left;
+    margin-top: 0;
+    margin-bottom: 1px;
 
 }
 
@@ -338,9 +340,9 @@ li {
 }
 
 .studio-button {
-    display: grid;
+   
     justify-self: end;
-    align-items: center;
+   
     background: #992626;
     color: white;
     padding: 10px 8px;
@@ -353,12 +355,14 @@ li {
 }
 
 .studio-button-icon {
-    position: static;
+    position: absolute;
     top: 1px;
 }
 
 .studio-button-label {
     position: relative;
+    justify-self: end;
+    align-items: left;
     text-transform: lowercase;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     white-space: nowrap;
