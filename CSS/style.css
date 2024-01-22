@@ -223,47 +223,37 @@ li {
 .summary-box {
     display: grid;
     height: 400px;
-    padding: 20px;
-    background-color: #992626;
-    color: #fff;
+    padding: 50px;
+    background-color: #fff;
+    color: #992626; 
 }
 
-.summaryleftrow {
-    text-align: left;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: normal;
-}
 
 .summaryhero {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* projects */
 
-.social-section {
-    display: grid;
-    text-align: center;
-    margin-top: 5px;
-    padding: 40px;
+/* ux skills */
+.uxlist {
     background-color: #992626;
+    display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.uxskills {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+color: white;
+place-items: center;
 }
 
-.social-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    filter: invert(100);
-    cursor: pointer
-}
 
 
 
-/* project card */
+/* selected works */
 
 .selected-works {
  display: grid;
@@ -277,7 +267,7 @@ li {
 
 .projects {
     display: grid;
-    align-items: center;
+    place-items: center;
     justify-content: center;
     min-height: 98vh;
     text-align: center;
@@ -288,7 +278,6 @@ li {
     border-radius: 0;
     margin: auto;
     display: grid;
-    
     border-style: solid;
     border-color: #992626;
     border-width: 0.5px;
@@ -297,11 +286,10 @@ li {
 }
 
 .textandimage {
-    margin: auto;
     display: grid;
     grid-template-columns: 54px 1fr;
     margin-top: 10px;
-    padding: 0 10px 0 10px;
+    position: relative;
 }
 
 .box-icon {
@@ -335,41 +323,39 @@ li {
 
     img {
         width: 100%;
-        display: inline-block;
-        overflow: hidden;
+        display: block;
+        
     }
 }
 
 .studio-button {
-   
-    justify-self: end;
-   
+    
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
     background: #992626;
     color: white;
-    padding: 10px 8px;
-    border-radius: 16px;
+    padding: 8px 10px;
+    border-radius: 50px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     transition: 0.35s ease all;
     overflow: hidden;
-    max-width: 22px;
+    max-width: 22px; /* icon size */
+
     
 }
 
-.studio-button-icon {
-    position: absolute;
-    top: 1px;
-}
+
 
 .studio-button-label {
-    position: relative;
-    justify-self: end;
-    align-items: left;
+   
     text-transform: lowercase;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     white-space: nowrap;
     transform: translateX(20px);
     transition: 0.25s ease all;
-    padding: 5px;
+   padding: 0 8px;
 }
 
 .project-text {
@@ -392,7 +378,6 @@ li {
     
     .studio-button {
         max-width: 100%;
-        text-align: left;
     }
 
 }
@@ -517,10 +502,16 @@ footer {
 /* media q */
 
 /* small screen*/
-@media (max-width: 499px) {
+@media (max-width: 600px) {
     .column {
         flex: 0 0 calc(100%/2 - 40px);
     }
+    .project-head {
+        position: sticky;
+        top: 0;
+        background-color: #992626;
+    }
+
     .selected-works {
         display: grid;
         grid-template-columns: 1fr;
@@ -534,6 +525,7 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    
 }
 
 /* large screen*/
